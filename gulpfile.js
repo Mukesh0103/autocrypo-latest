@@ -57,7 +57,7 @@ function watchFiles() {
 
 function server() {
     connect.server({
-        root: 'dist',
+        root: './',
         livereload: true
     });
 }
