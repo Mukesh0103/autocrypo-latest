@@ -23,7 +23,7 @@ function clean() {
 
 function copyHtml() {
     return src('src/**.html')
-        .pipe(dest('dist'))
+        .pipe(dest('./'))
         .pipe(connect.reload());
 }
 
