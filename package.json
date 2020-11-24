@@ -17,11 +17,8 @@
   },
   "homepage": "https://github.com/Mukesh0103/autocrypo#readme",
   "devDependencies": {
-    "@babel/core": "^7.12.3",
-    "@babel/preset-env": "^7.12.1",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
-    "gulp-babel": "^8.0.0",
     "gulp-connect": "^5.7.0",
     "gulp-csso": "^4.0.1",
     "gulp-rename": "^2.0.0",
