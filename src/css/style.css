@@ -927,6 +927,24 @@ input:placeholder-shown+label {
 
 .investors-section {
     padding: 100px 0;
+    position: relative;
+}
+
+.investors-section::before, .investors-section::after { 
+    content: "";
+    position: absolute;
+    top: 290px;
+    left: 0;
+    height: 279px;
+    width: 200px;
+    background-image: linear-gradient(to left,rgba(255,255,255,0) 30%,#fff 100%);
+    z-index: 9;
+}
+
+.investors-section::after {
+    right: 0;
+    left: unset;
+    background-image: linear-gradient(to right,rgba(255,255,255,0) 30%,#fff 100%);
 }
 
 .investors-heading {
@@ -1024,6 +1042,10 @@ input:placeholder-shown+label {
 .arrow.right-arrow {
     fill: #8aa1ac;
     transform: rotate(180deg);
+}
+
+.swiper-slide {
+    width: unset !important;
 }
 
 
