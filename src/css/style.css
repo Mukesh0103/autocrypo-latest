@@ -844,7 +844,7 @@ input:placeholder-shown+label {
 }
 
 .working-guide {
-    background-image: url(/images/how-it-works-bg.png);
+    background-image: url('../images/how-it-works-bg.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
