@@ -397,11 +397,11 @@ li {
     margin-top: 64px;
 }
 
-.selected-plan #yearly {
+.active #yearly {
     display: none;
 }
 
-.selected-plan #monthly {
+.active #monthly {
     display: block;
 }
 

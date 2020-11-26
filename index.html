@@ -123,7 +123,7 @@
                 <button class="text-primary plan-tab" onclick="switchTabs(event)" data-aos="fade-up"
                     id="yearlyTab">YEARLY - 2 MONTH
                     FREE</button>
-                <ul class="plan-details clearfix selected-plan" id="planDetails">
+                <ul class="plan-details clearfix active" id="planDetails">
                     <li class="plan-list f-left">
                         <h5 class="heading-5 mb-3">Starter</h5>
                         <div id="monthly">
@@ -254,15 +254,15 @@
                 </div>
             </article>
             <div class="manual-navigation">
-                <label for="radio1" class="manual-btn active" id="testimonial-dots"
+                <label for="radio1" class="manual-btn active"
                     onclick="activeIndicator(event, 0)"></label>
-                <label for="radio2" class="manual-btn" id="testimonial-dots"
+                <label for="radio2" class="manual-btn"
                     onclick="activeIndicator(event, 1)"></label>
-                <label for="radio3" class="manual-btn" id="testimonial-dots"
+                <label for="radio3" class="manual-btn"
                     onclick="activeIndicator(event, 2)"></label>
-                <label for="radio4" class="manual-btn" id="testimonial-dots"
+                <label for="radio4" class="manual-btn"
                     onclick="activeIndicator(event, 3)"></label>
-                <label for="radio5" class="manual-btn" id="testimonial-dots"
+                <label for="radio5" class="manual-btn"
                     onclick="activeIndicator(event, 4)"></label>
             </div>
         </section>
@@ -277,16 +277,16 @@
                         expertise.</p>
                     <div class="ta-center mb-8">
                         <button class="working-guide__index active text-size-secondary pos-rel"
-                            onclick="currentSlide(1)" id="indicator" data-aos="zoom-in" data-aos-delay="400">01</button>
+                            onclick="currentSlide(1)" data-aos="zoom-in" data-aos-delay="400">01</button>
                         <button class="working-guide__index text-size-secondary pos-rel" onclick="currentSlide(2)"
-                            id="indicator" data-aos="zoom-in" data-aos-delay="800">02</button>
+                            data-aos="zoom-in" data-aos-delay="800">02</button>
                         <button class="working-guide__index text-size-secondary pos-rel" onclick="currentSlide(3)"
-                            id="indicator" data-aos="zoom-in" data-aos-delay="1200">03</button>
+                            data-aos="zoom-in" data-aos-delay="1200">03</button>
                         <button class="working-guide__index text-size-secondary pos-rel" onclick="currentSlide(4)"
-                            id="indicator" data-aos="zoom-in" data-aos-delay="1600">04</button>
+                            data-aos="zoom-in" data-aos-delay="1600">04</button>
                     </div>
                     <ul class="pos-rel">
-                        <li class="working-guide__slide" id="content-slides">
+                        <li class="working-guide__slide">
                             <h5 class="heading-5 slide-content left" data-aos="fade-right" data-aos-delay="300">Select
                                 your farmshare and complete
                                 reservation form.</h5>
@@ -296,7 +296,7 @@
                                 nihil impedit quo minus id quod maxime placeat facere
                             </p>
                         </li>
-                        <li class="working-guide__slide" id="content-slides">
+                        <li class="working-guide__slide">
                             <h5 class="heading-5 slide-content left">Lorem Ipsum is simply dummy text of the printing.
                             </h5>
                             <p class="text-size-primary slide-content right">Lorem Ipsum has been the industry's
@@ -304,7 +304,7 @@
                                 and scrambled it to make a type specimen book.
                             </p>
                         </li>
-                        <li class="working-guide__slide" id="content-slides">
+                        <li class="working-guide__slide">
                             <h5 class="heading-5 slide-content left">Neque porro quisquam est qui dolorem ipsum quia
                                 dolor.</h5>
                             <p class="text-size-primary slide-content right">There are many variations of passages of
@@ -312,7 +312,7 @@
                                 injected humour, or randomised words.
                             </p>
                         </li>
-                        <li class="working-guide__slide" id="content-slides">
+                        <li class="working-guide__slide">
                             <h5 class="heading-5 slide-content left">There are many passages of Lorem Ipsum available
                             </h5>
                             <p class="text-size-primary slide-content right">Contrary to popular belief, Lorem Ipsum is
@@ -497,11 +497,9 @@
 
 
 
-    <script type="text/javascript" src="./dist/js/script.js"></script>
+    <script type="text/javascript" src="./dist/js/all.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="./dist/js/jquery-2.2.4.min.js"></script>
-    <script src="./dist/js/multislider.min.js"></script>
     <script>
         AOS.init({
             disable: false,

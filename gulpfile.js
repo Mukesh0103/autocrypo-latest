@@ -3,7 +3,10 @@ const del = require('del');
 const connect = require('gulp-connect');
 const minifyCSS = require('gulp-csso');
 const rename = require('gulp-rename');
-const sourceMaps = require('gulp-sourcemaps')
+const sourceMaps = require('gulp-sourcemaps');
+const imageOptimization = require('gulp-imagemin');
+const concat = require('gulp-concat');
+const terser = require('gulp-terser');
 
 const jsPaths = [
     'src/js/**.js'
@@ -29,12 +32,17 @@ function copyHtml() {
 
 function copyJs() {
     return src(jsPaths)
+        .pipe(sourceMaps.init())
+        .pipe(concat('all.js'))
+        .pipe(terser())
+        .pipe(sourceMaps.write()) 
         .pipe(dest('dist/js'))
         .pipe(connect.reload());
 }
 
 function copyImages() {
     return src(imagePaths)
+        .pipe(imageOptimization())
         .pipe(dest('dist/images'));
 }
 
