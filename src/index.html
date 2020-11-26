@@ -62,7 +62,7 @@
     <main class="bg-grey main-section">
         <section class="hero-container bg-dark pos-rel">
             <div class="container">
-                <article class="hero-content" data-aos="fade-down" data-aos-delay="300">
+                <article class="hero-content" data-aos="fade-down">
                     <h1 class="heading-1 mb-4">Easiest way to mining your bitcoin</h1>
                     <p class="text-size-primary mb-6">Autocryp is the place to buy and sell Bitcoin,
                         Ethereum and various kinds of Digital Assets in
@@ -71,9 +71,9 @@
                     <button class="btn btn-primary text-size-secondary hero-btn" onclick="openModal()">Get
                         started</button>
                 </article>
-                <figure class="hero-image__container" data-aos="fade-up" data-aos-delay="600">
-                    <img src="./dist/images/mobile-app.png" alt="mobile-app" class="hero-image">
-                </figure>
+                <picture class="hero-image__container" data-aos="fade-up">
+                    <img src="./dist/images/mobile-app@2x.png" alt="mobile-app" class="hero-image">
+                </picture>
             </div>
         </section>
         <section class="features-section">
@@ -254,16 +254,11 @@
                 </div>
             </article>
             <div class="manual-navigation">
-                <label for="radio1" class="manual-btn active"
-                    onclick="activeIndicator(event, 0)"></label>
-                <label for="radio2" class="manual-btn"
-                    onclick="activeIndicator(event, 1)"></label>
-                <label for="radio3" class="manual-btn"
-                    onclick="activeIndicator(event, 2)"></label>
-                <label for="radio4" class="manual-btn"
-                    onclick="activeIndicator(event, 3)"></label>
-                <label for="radio5" class="manual-btn"
-                    onclick="activeIndicator(event, 4)"></label>
+                <label for="radio1" class="manual-btn active" onclick="activeIndicator(event, 0)"></label>
+                <label for="radio2" class="manual-btn" onclick="activeIndicator(event, 1)"></label>
+                <label for="radio3" class="manual-btn" onclick="activeIndicator(event, 2)"></label>
+                <label for="radio4" class="manual-btn" onclick="activeIndicator(event, 3)"></label>
+                <label for="radio5" class="manual-btn" onclick="activeIndicator(event, 4)"></label>
             </div>
         </section>
         <section>
@@ -503,7 +498,7 @@
     <script>
         AOS.init({
             disable: false,
-            duration: 1500,
+            duration: 900,
             easing: 'ease-out-back',
             anchorPlacement: 'top-bottom'
         });
