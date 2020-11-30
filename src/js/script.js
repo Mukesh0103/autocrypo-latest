@@ -1,14 +1,24 @@
 // navmenu in mobile screen
 
+var mobileMenu = document.getElementById("mobile-menu");
 function openMenu() {
-    var x = document.getElementById("mobile-menu");
-    if (x.style.display === "block") {
-        x.style.display = "none";
+    if (mobileMenu.style.display === "block") {
+        mobileMenu.style.display = "none";
     } else {
-        x.style.display = "block";
+        mobileMenu.style.display = "block";
     }
 }
 
+// onscroll shadow 
+
+var onScrollShadow = document.getElementById("header");
+window.onscroll = function () {
+    if (window.scrollY >= 100) {
+        onScrollShadow.classList.add("onscroll-shadow");
+    } else {
+        onScrollShadow.classList.remove("onscroll-shadow");
+    }
+}
 
 // subscription plans
 

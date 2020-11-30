@@ -39,3 +39,16 @@ function showSlide(n) {
     slides[slideIndex - 1].style.opacity = 1;
     indicationNumber[slideIndex - 1].className += " active";
 }
+
+var prevBtn = document.getElementById("prevBtn");
+var nextBtn = document.getElementById("nextBtn");
+
+prevBtn.addEventListener("click", function () {
+    prevBtn.classList.add("active");
+    nextBtn.classList.remove("active");
+})
+
+nextBtn.addEventListener("click", function () {
+    nextBtn.classList.add("active");
+    prevBtn.classList.remove("active");
+})

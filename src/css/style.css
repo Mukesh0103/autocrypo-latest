@@ -1,5 +1,6 @@
 body {
     font-family: 'Rubik', sans-serif;
+    width: 100%;
 }
 
 * {
@@ -207,6 +208,12 @@ li {
     z-index: 10;
 }
 
+.header.onscroll-shadow {
+    background-color: #313a5a;
+    box-shadow: 0px 3px 10px #3c3c3c;
+    transition: 0.5s;
+}
+
 .nav-list {
     padding-top: 15px;
 }
@@ -260,9 +267,7 @@ li {
     margin-top: -3px;
 }
 
-.menu-button {
-    height: 20px;
-    width: 20px;
+.menu-button__input {
     display: none;
 }
 
@@ -685,6 +690,7 @@ li {
     top: 50%;
     transform: translate(-50%, -50%);
     padding: 60px 15px;
+    height: 640px;
 }
 
 .modal-content {
@@ -745,7 +751,7 @@ li {
 }
 
 input:placeholder-shown+label {
-    max-width: 70%;
+    max-width: 60%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -955,7 +961,7 @@ input:placeholder-shown+label {
 }
 
 .investors-body-section {
-    width: 500%;
+    width: 650%;
 }
 
 .investors-card {
@@ -1025,22 +1031,29 @@ input:placeholder-shown+label {
 
 .controls-btn.prev {
     margin-right: 16px;
+}
+
+.controls-btn {
+    background: #fff;
+    transition: 0.3s;
+}
+
+.controls-btn.active, .controls-btn:hover {
     background: #66bb6a;
     color: #fff;
 }
 
-.controls-btn.next {
-    background: #fff;
+.controls-btn.active .arrow, .controls-btn:hover .arrow {
+    fill: #fff;
 }
 
 .arrow {
     height: 24px;
     width: 12px;
-    fill: #fff;
+    fill: #8aa1ac;
 }
 
 .arrow.right-arrow {
-    fill: #8aa1ac;
     transform: rotate(180deg);
 }
 
@@ -1055,11 +1068,49 @@ input:placeholder-shown+label {
 }
 
 @media (max-width: 991px) {
-    .menu-button {
+    .menu-button__input {
         display: block;
-        background: none;
-        border: none;
-        outline: none;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 2;
+        -webkit-touch-callout: none;
+    }
+    .menu-icon__line {
+        display: block;
+        width: 28px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background: #cdcdcd;
+        border-radius: 3px;
+        z-index: 1;
+        transform-origin: 4px 0px;
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+    }
+    .menu-icon__line:first-of-type {
+        transform-origin: 0% 0%;
+    }
+    .menu-icon__line:nth-last-of-type(2) {
+        transform-origin: 0% 100%;
+    }
+    .menu-button__input:checked~.menu-icon__line {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: #cdcdcd;
+        bottom: 11px;
+    }
+    .menu-button__input:checked~.menu-icon__line:nth-last-of-type(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    .menu-button__input:checked~.menu-icon__line:nth-last-of-type(2) {
+        transform: rotate(-45deg) translate(0, -1px);
+        top: 12px;
     }
     .site-register {
         display: none;
@@ -1069,6 +1120,7 @@ input:placeholder-shown+label {
     }
     .mobile-menu {
         display: none;
+        transition: 2s ease-in-out;
     }
     .nav-list {
         display: none;
@@ -1090,6 +1142,10 @@ input:placeholder-shown+label {
     }
     .hero-content {
         max-width: 350px;
+    }
+    .hero-image__container {
+        height: 460px;
+        width: 300px;
     }
     .heading-1 {
         font-size: 40px;
@@ -1307,6 +1363,8 @@ input:placeholder-shown+label {
     }
     .footer-nav-links {
         display: block;
+        width: fit-content;
+        margin: auto;
     }
     .footer-nav-links:nth-child(2n+2) {
         display: none;
@@ -1323,7 +1381,7 @@ input:placeholder-shown+label {
     .working-guide__index::after {
         display: none;
     }
-    .working-guide__inner { 
+    .working-guide__inner {
         padding-top: 30px;
     }
     .slide-content.left {
@@ -1337,10 +1395,10 @@ input:placeholder-shown+label {
         padding: 30px;
         text-align: center;
     }
-    .investors-section::before, .investors-section::after { 
+    .investors-section::before, .investors-section::after {
         display: none;
     }
-    .investors-image__container { 
+    .investors-image__container {
         height: 64px;
         width: 64px;
         margin: 0 0 15px 0;
@@ -1354,5 +1412,34 @@ input:placeholder-shown+label {
     .investors-profile__container {
         width: 100%;
         max-width: unset;
+    }
+    .modal-content__heading {
+        font-size: 24px;
+    }
+    .modal-content__sub-heading {
+        font-size: 20px;
+    }
+    .form-fieldset {
+        margin-bottom: 10px;
+    }
+    .form-input, .form-label {
+        font-size: 12px;
+    }
+    .modal-box {
+        width: unset;
+        min-width: 280px;
+        max-width: 400px;
+        padding: 20px 10px;
+    }
+    .modal-content {
+        padding: 0 20px;
+    }
+    .submit-btn {
+        font-size: 18px;
+        padding: 13px 0;
+    }
+    .show-password {
+        font-size: 10px;
+        width: 50px;
     }
 }

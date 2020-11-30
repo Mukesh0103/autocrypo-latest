@@ -22,472 +22,504 @@
 </head>
 
 <body>
-    <header class="header bg-dark" data-aos="fade-in">
-        <div class="container clearfix pos-rel">
-            <a href="javascript:void(0)" class="heading-4">autocryp</a>
-            <ul class="nav-list big-screen">
-                <li class="text-size-primary nav-list__item pos-rel link-hover"><a href="javascript:void(0)">Benefit</a>
-                </li>
-                <li class="text-size-primary nav-list__item pos-rel link-hover"><a href="javascript:void(0)">Pricing</a>
-                </li>
-                <li class="text-size-primary nav-list__item pos-rel link-hover"><a
-                        href="javascript:void(0)">Testimonials</a></li>
-                <li class="text-size-primary nav-list__item pos-rel link-hover"><a href="javascript:void(0)">Client</a>
-                </li>
-            </ul>
-            <ul class="nav-list mobile f-right">
-                <li class="text-size-primary nav-list__item pos-rel link-hover"><a href="javascript:void(0)">Login</a>
-                </li>
-                <li class="text-size-primary nav-list__item pos-rel">
-                    <button class="btn btn-primary site-register" onclick="openModal()">Register</button>
-                    <button class="menu-button" onclick="openMenu()">
-                        <svg class="icon">
-                            <use href="./dist/images/sprite.svg#menu" /></svg>
-                    </button>
-                </li>
-            </ul>
-            <nav class="mobile-menu" id="mobile-menu">
-                <ul class="nav-menu">
-                    <li class="nav-menu__list"><a href="javascript:void(0)">Benefit</a></li>
-                    <li class="nav-menu__list"><a href="javascript:void(0)">Pricing</a></li>
-                    <li class="nav-menu__list"><a href="javascript:void(0)">Testimonials</a></li>
-                    <li class="nav-menu__list"><a href="javascript:void(0)">Client</a></li>
-                    <li class="nav-menu__list text-size-primary">
-                        <button class="btn btn-primary site-register mobile">Register</button>
-                    <li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main class="bg-grey main-section">
-        <section class="hero-container bg-dark pos-rel">
-            <div class="container">
-                <article class="hero-content" data-aos="fade-down">
-                    <h1 class="heading-1 mb-4">Easiest way to mining your bitcoin</h1>
-                    <p class="text-size-primary mb-6">Autocryp is the place to buy and sell Bitcoin,
-                        Ethereum and various kinds of Digital Assets in
-                        Indonesia. Then, book your weekly, bi-weekly or one-off clean online with imminent confirmation.
-                    </p>
-                    <button class="btn btn-primary text-size-secondary hero-btn" onclick="openModal()">Get
-                        started</button>
-                </article>
-                <picture class="hero-image__container" data-aos="fade-up">
-                    <img src="./dist/images/mobile-app@2x.png" alt="mobile-app" class="hero-image">
-                </picture>
-            </div>
-        </section>
-        <section class="features-section">
-            <div class="outer-container pos-rel">
-                <ul class="site-features bg-light clearfix" data-aos="fade-up">
-                    <li class="site-features__list f-left" data-aos="fade-right" data-aos-delay="400">
-                        <figure class="feature-icon__container">
-                            <svg class="icon">
-                                <use href="./dist/images/sprite.svg#shape-1" /></svg>
-                        </figure>
-                        <h6 class="text-size-secondary feature-heading mb-3">Secure Every Transaction</h6>
-                        <hr class="divider-line">
-                        <p class="text-size-primary">Your account is protected by Multifactor Authentication using a
-                            combination of email, SMS and Google Authenticator.</p>
+    <div class="grand-parent">
+        <header class="header bg-dark" data-aos="fade-in" id="header">
+            <div class="container clearfix pos-rel">
+                <a href="javascript:void(0)" class="heading-4">autocryp</a>
+                <ul class="nav-list big-screen">
+                    <li class="text-size-primary nav-list__item pos-rel link-hover"><a
+                            href="javascript:void(0)">Benefit</a>
                     </li>
-                    <li class="site-features__list f-left" data-aos="fade-right" data-aos-delay="800">
-                        <figure class="feature-icon__container">
-                            <svg class="icon">
-                                <use href="./dist/images/sprite.svg#shape-2" /></svg>
-                        </figure>
-                        <h6 class="text-size-secondary feature-heading mb-3">Easiest To Use</h6>
-                        <hr class="divider-line">
-                        <p class="text-size-primary">You only need 1 account to do all Bitcoin transactions whether
-                            it is buying, selling, investing or trading.</p>
+                    <li class="text-size-primary nav-list__item pos-rel link-hover"><a
+                            href="javascript:void(0)">Pricing</a>
                     </li>
-                    <li class="site-features__list f-left" data-aos="fade-right" data-aos-delay="1200">
-                        <figure class="feature-icon__container">
-                            <svg class="icon">
-                                <use href="./dist/images/sprite.svg#shape-3" /></svg>
-                        </figure>
-                        <h6 class="text-size-secondary feature-heading mb-3">Fastest Mining</h6>
-                        <hr class="divider-line">
-                        <p class="text-size-primary">The Rupiah deposit can be processed instantly and Rupiah
-                            withdrawal is processed in less than 1 business day.</p>
+                    <li class="text-size-primary nav-list__item pos-rel link-hover"><a
+                            href="javascript:void(0)">Testimonials</a></li>
+                    <li class="text-size-primary nav-list__item pos-rel link-hover"><a
+                            href="javascript:void(0)">Client</a>
                     </li>
                 </ul>
-            </div>
-        </section>
-        <section class="plans-section">
-            <div class="container ta-center">
-                <h2 class="heading-2 mb-6 plans-heading" data-aos="fade-up">Paid plan starts with a 7-day free trial, No
-                    credit card
-                    required
-                </h2>
-                <button class="text-primary plan-tab active-tab" onclick="switchTabs(event)" id="monthlyTab"
-                    data-aos="fade-up">MONTHLY</button>
-                <button class="text-primary plan-tab" onclick="switchTabs(event)" data-aos="fade-up"
-                    id="yearlyTab">YEARLY - 2 MONTH
-                    FREE</button>
-                <ul class="plan-details clearfix active" id="planDetails">
-                    <li class="plan-list f-left">
-                        <h5 class="heading-5 mb-3">Starter</h5>
-                        <div id="monthly">
-                            <p class="text-primary plan-value">$10</p>
-                            <p class="text-size-primary text-secondary plan-validity mb-6">Per Month</p>
-                        </div>
-                        <div id="yearly">
-                            <p class="text-primary plan-value">$100</p>
-                            <p class="text-size-primary text-secondary plan-validity mb-6">Per year</p>
-                        </div>
-                        <ul class="plan-benefits text-secondary">
-                            <li class="text-size-primary plan-benefits__list">1 Pixel ID*</li>
-                            <li class="text-size-primary plan-benefits__list">URL</li>
-                            <li class="text-size-primary plan-benefits__list">Up to 200 shortened links / month</li>
-                        </ul>
-                        <button class="btn btn-primary plan-btn">START FREE TRIAL</button>
+                <ul class="nav-list mobile f-right">
+                    <li class="text-size-primary nav-list__item pos-rel link-hover"><a
+                            href="javascript:void(0)">Login</a>
                     </li>
-                    <li class="plan-list active-plan f-left" data-aos="flip-left"
-                        data-aos-anchor-placement="top-center">
-                        <h5 class="heading-5 mb-3">Professional</h5>
-                        <div id="monthly">
-                            <p class="text-primary plan-value">$29</p>
-                            <p class="text-size-primary text-secondary plan-validity mb-6">Per Month</p>
-                        </div>
-                        <div id="yearly">
-                            <p class="text-primary plan-value">$290</p>
-                            <p class="text-size-primary text-secondary plan-validity mb-6">Per year</p>
-                        </div>
-                        <ul class="plan-benefits text-secondary">
-                            <li class="text-size-primary plan-benefits__list">5 Pixel ID*</li>
-                            <li class="text-size-primary plan-benefits__list">1 Custom URL</li>
-                            <li class="text-size-primary plan-benefits__list">Up to 1,000 shortened links / month</li>
-                            <li class="text-size-primary plan-benefits__list">5 Team Member</li>
-                        </ul>
-                        <button class="btn btn-primary plan-btn">START FREE TRIAL</button>
-                    </li>
-                    <li class="plan-list f-left">
-                        <h5 class="heading-5 mb-3">Business</h5>
-                        <div id="monthly">
-                            <p class="text-primary plan-value">$49</p>
-                            <p class="text-size-primary text-secondary plan-validity mb-6">Per Month</p>
-                        </div>
-                        <div id="yearly">
-                            <p class="text-primary plan-value">$490</p>
-                            <p class="text-size-primary text-secondary plan-validity mb-6">Per year</p>
-                        </div>
-                        <ul class="plan-benefits text-secondary">
-                            <li class="text-size-primary plan-benefits__list">Unlimited Pixels ID</li>
-                            <li class="text-size-primary plan-benefits__list">Unlimited Custom URL</li>
-                            <li class="text-size-primary plan-benefits__list">Unlimited shortened links / month</li>
-                            <li class="text-size-primary plan-benefits__list">Unlimited Member</li>
-                        </ul>
-                        <button class="btn btn-primary plan-btn">START FREE TRIAL</button>
+                    <li class="text-size-primary nav-list__item pos-rel">
+                        <button class="btn btn-primary site-register" onclick="openModal()">Register</button>
+                        <input type="checkbox" class="menu-button__input" onclick="openMenu()" />
+                        <span class="menu-icon__line"></span>
+                        <span class="menu-icon__line"></span>
+                        <span class="menu-icon__line"></span>
                     </li>
                 </ul>
+                <nav class="mobile-menu" id="mobile-menu">
+                    <ul class="nav-menu">
+                        <li class="nav-menu__list"><a href="javascript:void(0)">Benefit</a></li>
+                        <li class="nav-menu__list"><a href="javascript:void(0)">Pricing</a></li>
+                        <li class="nav-menu__list"><a href="javascript:void(0)">Testimonials</a></li>
+                        <li class="nav-menu__list"><a href="javascript:void(0)">Client</a></li>
+                        <li class="nav-menu__list text-size-primary">
+                            <button type="button" class="btn btn-primary site-register mobile">Register</button>
+                        <li>
+                    </ul>
+                </nav>
             </div>
-        </section>
-        <section class="testimonial-section pos-rel">
-            <div class="container pos-rel" data-aos="fade-right">
-                <div class="testimonial-heading">
-                    <h2 class="heading-2 testimonial-heading__content">What Customers Say</h2>
+        </header>
+        <main class="bg-grey main-section">
+            <section class="hero-container bg-dark pos-rel">
+                <div class="container">
+                    <article class="hero-content" data-aos="fade-down">
+                        <h1 class="heading-1 mb-4">Easiest way to mining your bitcoin</h1>
+                        <p class="text-size-primary mb-6">Autocryp is the place to buy and sell Bitcoin,
+                            Ethereum and various kinds of Digital Assets in
+                            Indonesia. Then, book your weekly, bi-weekly or one-off clean online with imminent
+                            confirmation.
+                        </p>
+                        <button class="btn btn-primary text-size-secondary hero-btn" onclick="openModal()">Get
+                            started</button>
+                    </article>
+                    <picture class="hero-image__container" data-aos="fade-up">
+                        <img src="./dist/images/mobile-app@2x.png" alt="mobile-app" class="hero-image">
+                    </picture>
                 </div>
-            </div>
-            <article class="bg-dark testimonial-bg" data-aos="fade-left" data-aos-delay="600">
-                <div class="testimonial-reviews" data-aos="fade-right" data-aos-delay="1000">
-                    <input type="radio" name="radio-btn" id="radio1" class="radio-btn">
-                    <input type="radio" name="radio-btn" id="radio2" class="radio-btn">
-                    <input type="radio" name="radio-btn" id="radio3" class="radio-btn">
-                    <input type="radio" name="radio-btn" id="radio4" class="radio-btn">
-                    <input type="radio" name="radio-btn" id="radio5" class="radio-btn">
-
-
-                    <div class="testimonial-card active text-secondary card-one" id="slide-one">
-                        <figure class="apostrophe-container">
-                            <svg class="icon apostrophe-icon">
-                                <use href="./dist/images/sprite.svg#small-codes" /></svg>
-                        </figure>
-                        <p class="text-size-secondary mb-4">"I started driving with Uber because I
-                            liked the idea that my own car could make me money. After
-                            just about a couple weeks, I saw that this was something I wanted to do permanently."</p>
-                        <p class="text-size-secondary customer-name">Brandon Roger / <span class="customer-location">OWW
-                                Studio</span></p>
-                    </div>
-                    <div class="testimonial-card text-secondary" id="testimonial-slides">
-                        <figure class="apostrophe-container">
-                            <svg class="icon apostrophe-icon">
-                                <use href="./dist/images/sprite.svg#small-codes" /></svg>
-                        </figure>
-                        <p class="text-size-secondary mb-4">"I wanted something where I could meet
-                            new people and get out of the house. Uber has helped with both of those things, plus I’m
-                            seeing new parts of the city I’ve never seen before!"</p>
-                        <p class="text-size-secondary customer-name">Sean Walker / <span class="customer-location">OWW
-                                Studio</span></p>
-                    </div>
-                    <div class="testimonial-card text-secondary" id="testimonial-slides">
-                        <figure class="apostrophe-container">
-                            <svg class="icon apostrophe-icon">
-                                <use href="./dist/images/sprite.svg#small-codes" /></svg>
-                        </figure>
-                        <p class="text-size-secondary mb-4">"Uber enables me to have the creative
-                            freedom for baking my cakes and also driving on the side so I can make more money and also
-                            have my dream job. so I can make more money"</p>
-                        <p class="text-size-secondary customer-name">Jenny Harra / <span class="customer-location">OWW
-                                Studio</span></p>
-                    </div>
-                    <div class="testimonial-card text-secondary" id="testimonial-slides">
-                        <figure class="apostrophe-container">
-                            <svg class="icon apostrophe-icon">
-                                <use href="./dist/images/sprite.svg#small-codes" /></svg>
-                        </figure>
-                        <p class="text-size-secondary mb-4">"Uber enables me to have the creative
-                            freedom for baking my cakes and also driving on the side so I can make more money and also
-                            have my dream job. so I can make more money"</p>
-                        <p class="text-size-secondary customer-name">Jenny Harra / <span class="customer-location">OWW
-                                Studio</span></p>
-                    </div>
-                    <div class="testimonial-card text-secondary" id="testimonial-slides">
-                        <figure class="apostrophe-container">
-                            <svg class="icon apostrophe-icon">
-                                <use href="./dist/images/sprite.svg#small-codes" /></svg>
-                        </figure>
-                        <p class="text-size-secondary mb-4">"Uber enables me to have the creative
-                            freedom for baking my cakes and also driving on the side so I can make more money and also
-                            have my dream job. so I can make more money"</p>
-                        <p class="text-size-secondary customer-name">Jenny Harra / <span class="customer-location">OWW
-                                Studio</span></p>
-                    </div>
-                </div>
-            </article>
-            <div class="manual-navigation">
-                <label for="radio1" class="manual-btn active" onclick="activeIndicator(event, 0)"></label>
-                <label for="radio2" class="manual-btn" onclick="activeIndicator(event, 1)"></label>
-                <label for="radio3" class="manual-btn" onclick="activeIndicator(event, 2)"></label>
-                <label for="radio4" class="manual-btn" onclick="activeIndicator(event, 3)"></label>
-                <label for="radio5" class="manual-btn" onclick="activeIndicator(event, 4)"></label>
-            </div>
-        </section>
-        <section>
-            <div class="container working-guide mb-8" data-aos="fade-up" data-aos-delay="300">
-                <div class="working-guide__inner">
-                    <h3 class="heading-3 ta-center mb-1" data-aos="fade-down" data-aos-delay="500">How it works</h3>
-                    <p class="text-size-secondary ta-center mb-5 working-guide__content" data-aos="fade-down"
-                        data-aos-delay="700">Take your pick from the supply
-                        chain and participate in agribusiness projects that are backed up
-                        not only by Zou, but also by the best land, family heritage, innovation and overall superior
-                        expertise.</p>
-                    <div class="ta-center mb-8">
-                        <button class="working-guide__index active text-size-secondary pos-rel"
-                            onclick="currentSlide(1)" data-aos="zoom-in" data-aos-delay="400">01</button>
-                        <button class="working-guide__index text-size-secondary pos-rel" onclick="currentSlide(2)"
-                            data-aos="zoom-in" data-aos-delay="800">02</button>
-                        <button class="working-guide__index text-size-secondary pos-rel" onclick="currentSlide(3)"
-                            data-aos="zoom-in" data-aos-delay="1200">03</button>
-                        <button class="working-guide__index text-size-secondary pos-rel" onclick="currentSlide(4)"
-                            data-aos="zoom-in" data-aos-delay="1600">04</button>
-                    </div>
-                    <ul class="pos-rel">
-                        <li class="working-guide__slide">
-                            <h5 class="heading-5 slide-content left" data-aos="fade-right" data-aos-delay="300">Select
-                                your farmshare and complete
-                                reservation form.</h5>
-                            <p class="text-size-primary slide-content right" data-aos="fade-right" data-aos-delay="600">
-                                Et harum quidem rerum facilis est et
-                                expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque
-                                nihil impedit quo minus id quod maxime placeat facere
-                            </p>
+            </section>
+            <section class="features-section">
+                <div class="outer-container pos-rel">
+                    <ul class="site-features bg-light clearfix" data-aos="fade-up">
+                        <li class="site-features__list f-left" data-aos="fade-right" data-aos-delay="400">
+                            <figure class="feature-icon__container">
+                                <svg class="icon">
+                                    <use href="./dist/images/sprite.svg#shape-1" /></svg>
+                            </figure>
+                            <h6 class="text-size-secondary feature-heading mb-3">Secure Every Transaction</h6>
+                            <hr class="divider-line">
+                            <p class="text-size-primary">Your account is protected by Multifactor Authentication using a
+                                combination of email, SMS and Google Authenticator.</p>
                         </li>
-                        <li class="working-guide__slide">
-                            <h5 class="heading-5 slide-content left">Lorem Ipsum is simply dummy text of the printing.
-                            </h5>
-                            <p class="text-size-primary slide-content right">Lorem Ipsum has been the industry's
-                                standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                                and scrambled it to make a type specimen book.
-                            </p>
+                        <li class="site-features__list f-left" data-aos="fade-right" data-aos-delay="800">
+                            <figure class="feature-icon__container">
+                                <svg class="icon">
+                                    <use href="./dist/images/sprite.svg#shape-2" /></svg>
+                            </figure>
+                            <h6 class="text-size-secondary feature-heading mb-3">Easiest To Use</h6>
+                            <hr class="divider-line">
+                            <p class="text-size-primary">You only need 1 account to do all Bitcoin transactions whether
+                                it is buying, selling, investing or trading.</p>
                         </li>
-                        <li class="working-guide__slide">
-                            <h5 class="heading-5 slide-content left">Neque porro quisquam est qui dolorem ipsum quia
-                                dolor.</h5>
-                            <p class="text-size-primary slide-content right">There are many variations of passages of
-                                Lorem Ipsum available, but the majority have suffered alteration in some form, by
-                                injected humour, or randomised words.
-                            </p>
-                        </li>
-                        <li class="working-guide__slide">
-                            <h5 class="heading-5 slide-content left">There are many passages of Lorem Ipsum available
-                            </h5>
-                            <p class="text-size-primary slide-content right">Contrary to popular belief, Lorem Ipsum is
-                                not simply random text. It has roots in a piece of classical Latin literature from 45
-                                BC, making it over 2000 years old.
-                            </p>
+                        <li class="site-features__list f-left" data-aos="fade-right" data-aos-delay="1200">
+                            <figure class="feature-icon__container">
+                                <svg class="icon">
+                                    <use href="./dist/images/sprite.svg#shape-3" /></svg>
+                            </figure>
+                            <h6 class="text-size-secondary feature-heading mb-3">Fastest Mining</h6>
+                            <hr class="divider-line">
+                            <p class="text-size-primary">The Rupiah deposit can be processed instantly and Rupiah
+                                withdrawal is processed in less than 1 business day.</p>
                         </li>
                     </ul>
                 </div>
-            </div>
-        </section>
-        <section class="investors-section pos-rel">
-            <div class="container">
-                <div class="investors-heading mb-10" data-aos="fade-up" data-aos-delay="300">
-                    <h3 class="heading-3 investors-heading__content">What investors like you are saying about Zou</h3>
+            </section>
+            <section class="plans-section">
+                <div class="container ta-center">
+                    <h2 class="heading-2 mb-6 plans-heading" data-aos="fade-up">Paid plan starts with a 7-day free
+                        trial, No
+                        credit card
+                        required
+                    </h2>
+                    <button class="text-primary plan-tab active-tab" onclick="switchTabs(event)" id="monthlyTab"
+                        data-aos="fade-up">MONTHLY</button>
+                    <button class="text-primary plan-tab" onclick="switchTabs(event)" data-aos="fade-up"
+                        id="yearlyTab">YEARLY - 2 MONTH
+                        FREE</button>
+                    <ul class="plan-details clearfix active" id="planDetails">
+                        <li class="plan-list f-left">
+                            <h5 class="heading-5 mb-3">Starter</h5>
+                            <div id="monthly">
+                                <p class="text-primary plan-value">$10</p>
+                                <p class="text-size-primary text-secondary plan-validity mb-6">Per Month</p>
+                            </div>
+                            <div id="yearly">
+                                <p class="text-primary plan-value">$100</p>
+                                <p class="text-size-primary text-secondary plan-validity mb-6">Per year</p>
+                            </div>
+                            <ul class="plan-benefits text-secondary">
+                                <li class="text-size-primary plan-benefits__list">1 Pixel ID*</li>
+                                <li class="text-size-primary plan-benefits__list">URL</li>
+                                <li class="text-size-primary plan-benefits__list">Up to 200 shortened links / month</li>
+                            </ul>
+                            <button class="btn btn-primary plan-btn">START FREE TRIAL</button>
+                        </li>
+                        <li class="plan-list active-plan f-left" data-aos="flip-left"
+                            data-aos-anchor-placement="top-center">
+                            <h5 class="heading-5 mb-3">Professional</h5>
+                            <div id="monthly">
+                                <p class="text-primary plan-value">$29</p>
+                                <p class="text-size-primary text-secondary plan-validity mb-6">Per Month</p>
+                            </div>
+                            <div id="yearly">
+                                <p class="text-primary plan-value">$290</p>
+                                <p class="text-size-primary text-secondary plan-validity mb-6">Per year</p>
+                            </div>
+                            <ul class="plan-benefits text-secondary">
+                                <li class="text-size-primary plan-benefits__list">5 Pixel ID*</li>
+                                <li class="text-size-primary plan-benefits__list">1 Custom URL</li>
+                                <li class="text-size-primary plan-benefits__list">Up to 1,000 shortened links / month
+                                </li>
+                                <li class="text-size-primary plan-benefits__list">5 Team Member</li>
+                            </ul>
+                            <button class="btn btn-primary plan-btn">START FREE TRIAL</button>
+                        </li>
+                        <li class="plan-list f-left">
+                            <h5 class="heading-5 mb-3">Business</h5>
+                            <div id="monthly">
+                                <p class="text-primary plan-value">$49</p>
+                                <p class="text-size-primary text-secondary plan-validity mb-6">Per Month</p>
+                            </div>
+                            <div id="yearly">
+                                <p class="text-primary plan-value">$490</p>
+                                <p class="text-size-primary text-secondary plan-validity mb-6">Per year</p>
+                            </div>
+                            <ul class="plan-benefits text-secondary">
+                                <li class="text-size-primary plan-benefits__list">Unlimited Pixels ID</li>
+                                <li class="text-size-primary plan-benefits__list">Unlimited Custom URL</li>
+                                <li class="text-size-primary plan-benefits__list">Unlimited shortened links / month</li>
+                                <li class="text-size-primary plan-benefits__list">Unlimited Member</li>
+                            </ul>
+                            <button class="btn btn-primary plan-btn">START FREE TRIAL</button>
+                        </li>
+                    </ul>
                 </div>
-                <div class="swiper-container">
-                    <div class="investors-body-section mb-6 swiper-wrapper">
-                        <div class="investors-card swiper-slide" data-aos="zoom-in" data-aos-delay="300">
-                            <figure class="investors-profile investors-image__container">
-                                <img src="./dist/images/profile.png" alt="profile" class="investors-profile__icon">
-                            </figure>
-                            <div class="investors-profile investors-profile__container">
-                                <p class="text-size-secondary investors-profile__name">Fernando Soler</p>
-                                <p class="text-size-secondary investors-profile__position">Telecommunication Engineer
-                                </p>
-                            </div>
-                            <div class="investors-review">
-                                <p class="text-size-primary investors-review__content">Quis autem vel eum iure
-                                    reprehenderit qui in ea voluptate velit esse quam nihil molestiae.</p>
-                            </div>
-                        </div>
-                        <div class="investors-card swiper-slide" data-aos="zoom-in" data-aos-delay="600">
-                            <figure class="investors-profile investors-image__container">
-                                <img src="./dist/images/profile.png" alt="profile" class="investors-profile__icon">
-                            </figure>
-                            <div class="investors-profile investors-profile__container">
-                                <p class="text-size-secondary investors-profile__name">Ilone Pickford</p>
-                                <p class="text-size-secondary investors-profile__position">Head of Agrogofund Groups</p>
-                            </div>
-                            <div class="investors-review">
-                                <p class="text-size-primary investors-review__content">" At vero eos et accusamus et
-                                    iusto
-                                    odio dignissimos ducimus qui blanditiis praesentium.</p>
-                            </div>
-                        </div>
-                        <div class="investors-card swiper-slide" data-aos="zoom-in" data-aos-delay="900">
-                            <figure class="investors-profile investors-image__container">
-                                <img src="./dist/images/profile.png" alt="profile" class="investors-profile__icon">
-                            </figure>
-                            <div class="investors-profile investors-profile__container">
-                                <p class="text-size-secondary investors-profile__name">Ed O’Brien</p>
-                                <p class="text-size-secondary investors-profile__position">Herbalist</p>
-                            </div>
-                            <div class="investors-review">
-                                <p class="text-size-primary investors-review__content">" Ui dolorem eum fugiat quo
-                                    voluptas
-                                    nulla pariatur? At vero eos et accusamus et iusto odio.</p>
-                            </div>
-                        </div>
-                        <div class="investors-card swiper-slide" data-aos="zoom-in" data-aos-delay="1200">
-                            <figure class="investors-profile investors-image__container">
-                                <img src="./dist/images/profile.png" alt="profile" class="investors-profile__icon">
-                            </figure>
-                            <div class="investors-profile investors-profile__container">
-                                <p class="text-size-secondary investors-profile__name">Fernando Soler</p>
-                                <p class="text-size-secondary investors-profile__position">Telecommunication Engineer
-                                </p>
-                            </div>
-                            <div class="investors-review">
-                                <p class="text-size-primary investors-review__content">" Quis autem vel eum iure
-                                    reprehenderit qui in ea voluptate velit esse quam nihil molestiae.</p>
-                            </div>
-                        </div>
-                        <div class="investors-card swiper-slide" data-aos="zoom-in" data-aos-delay="1500">
-                            <figure class="investors-profile investors-image__container">
-                                <img src="./dist/images/profile.png" alt="profile" class="investors-profile__icon">
-                            </figure>
-                            <div class="investors-profile investors-profile__container">
-                                <p class="text-size-secondary investors-profile__name">Ilone Pickford</p>
-                                <p class="text-size-secondary investors-profile__position">Head of Agrogofund Groups</p>
-                            </div>
-                            <div class="investors-review">
-                                <p class="text-size-primary investors-review__content">" At vero eos et accusamus et
-                                    iusto
-                                    odio dignissimos ducimus qui blanditiis praesentium.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide-controls">
-                        <button class="controls-btn prev swiper-button-prev"><svg class="arrow">
-                                <use href="./dist/images/sprite.svg#left-arrow" /></svg></button>
-                        <button class="controls-btn next swiper-button-next"><svg class="arrow right-arrow">
-                                <use href="./dist/images/sprite.svg#left-arrow" /></svg></button>
+            </section>
+            <section class="testimonial-section pos-rel">
+                <div class="container pos-rel" data-aos="fade-right">
+                    <div class="testimonial-heading">
+                        <h2 class="heading-2 testimonial-heading__content">What Customers Say</h2>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="working-platform ta-center" data-aos="fade-up">
+                <article class="bg-dark testimonial-bg" data-aos="fade-left" data-aos-delay="600">
+                    <div class="testimonial-reviews" data-aos="fade-right" data-aos-delay="1000">
+                        <input type="radio" name="radio-btn" id="radio1" class="radio-btn">
+                        <input type="radio" name="radio-btn" id="radio2" class="radio-btn">
+                        <input type="radio" name="radio-btn" id="radio3" class="radio-btn">
+                        <input type="radio" name="radio-btn" id="radio4" class="radio-btn">
+                        <input type="radio" name="radio-btn" id="radio5" class="radio-btn">
+
+
+                        <div class="testimonial-card active text-secondary card-one" id="slide-one">
+                            <figure class="apostrophe-container">
+                                <svg class="icon apostrophe-icon">
+                                    <use href="./dist/images/sprite.svg#small-codes" /></svg>
+                            </figure>
+                            <p class="text-size-secondary mb-4">"I started driving with Uber because I
+                                liked the idea that my own car could make me money. After
+                                just about a couple weeks, I saw that this was something I wanted to do permanently."
+                            </p>
+                            <p class="text-size-secondary customer-name">Brandon Roger / <span
+                                    class="customer-location">OWW
+                                    Studio</span></p>
+                        </div>
+                        <div class="testimonial-card text-secondary" id="testimonial-slides">
+                            <figure class="apostrophe-container">
+                                <svg class="icon apostrophe-icon">
+                                    <use href="./dist/images/sprite.svg#small-codes" /></svg>
+                            </figure>
+                            <p class="text-size-secondary mb-4">"I wanted something where I could meet
+                                new people and get out of the house. Uber has helped with both of those things, plus I’m
+                                seeing new parts of the city I’ve never seen before!"</p>
+                            <p class="text-size-secondary customer-name">Sean Walker / <span
+                                    class="customer-location">OWW
+                                    Studio</span></p>
+                        </div>
+                        <div class="testimonial-card text-secondary" id="testimonial-slides">
+                            <figure class="apostrophe-container">
+                                <svg class="icon apostrophe-icon">
+                                    <use href="./dist/images/sprite.svg#small-codes" /></svg>
+                            </figure>
+                            <p class="text-size-secondary mb-4">"Uber enables me to have the creative
+                                freedom for baking my cakes and also driving on the side so I can make more money and
+                                also
+                                have my dream job. so I can make more money"</p>
+                            <p class="text-size-secondary customer-name">Jenny Harra / <span
+                                    class="customer-location">OWW
+                                    Studio</span></p>
+                        </div>
+                        <div class="testimonial-card text-secondary" id="testimonial-slides">
+                            <figure class="apostrophe-container">
+                                <svg class="icon apostrophe-icon">
+                                    <use href="./dist/images/sprite.svg#small-codes" /></svg>
+                            </figure>
+                            <p class="text-size-secondary mb-4">"Uber enables me to have the creative
+                                freedom for baking my cakes and also driving on the side so I can make more money and
+                                also
+                                have my dream job. so I can make more money"</p>
+                            <p class="text-size-secondary customer-name">Jenny Harra / <span
+                                    class="customer-location">OWW
+                                    Studio</span></p>
+                        </div>
+                        <div class="testimonial-card text-secondary" id="testimonial-slides">
+                            <figure class="apostrophe-container">
+                                <svg class="icon apostrophe-icon">
+                                    <use href="./dist/images/sprite.svg#small-codes" /></svg>
+                            </figure>
+                            <p class="text-size-secondary mb-4">"Uber enables me to have the creative
+                                freedom for baking my cakes and also driving on the side so I can make more money and
+                                also
+                                have my dream job. so I can make more money"</p>
+                            <p class="text-size-secondary customer-name">Jenny Harra / <span
+                                    class="customer-location">OWW
+                                    Studio</span></p>
+                        </div>
+                    </div>
+                </article>
+                <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn active" onclick="activeIndicator(event, 0)"></label>
+                    <label for="radio2" class="manual-btn" onclick="activeIndicator(event, 1)"></label>
+                    <label for="radio3" class="manual-btn" onclick="activeIndicator(event, 2)"></label>
+                    <label for="radio4" class="manual-btn" onclick="activeIndicator(event, 3)"></label>
+                    <label for="radio5" class="manual-btn" onclick="activeIndicator(event, 4)"></label>
+                </div>
+            </section>
+            <section>
+                <div class="container working-guide mb-8" data-aos="fade-up" data-aos-delay="300">
+                    <div class="working-guide__inner">
+                        <h3 class="heading-3 ta-center mb-1" data-aos="fade-down" data-aos-delay="500">How it works</h3>
+                        <p class="text-size-secondary ta-center mb-5 working-guide__content" data-aos="fade-down"
+                            data-aos-delay="700">Take your pick from the supply
+                            chain and participate in agribusiness projects that are backed up
+                            not only by Zou, but also by the best land, family heritage, innovation and overall superior
+                            expertise.</p>
+                        <div class="ta-center mb-8">
+                            <button class="working-guide__index active text-size-secondary pos-rel"
+                                onclick="currentSlide(1)" data-aos="zoom-in" data-aos-delay="400">01</button>
+                            <button class="working-guide__index text-size-secondary pos-rel" onclick="currentSlide(2)"
+                                data-aos="zoom-in" data-aos-delay="800">02</button>
+                            <button class="working-guide__index text-size-secondary pos-rel" onclick="currentSlide(3)"
+                                data-aos="zoom-in" data-aos-delay="1200">03</button>
+                            <button class="working-guide__index text-size-secondary pos-rel" onclick="currentSlide(4)"
+                                data-aos="zoom-in" data-aos-delay="1600">04</button>
+                        </div>
+                        <ul class="pos-rel">
+                            <li class="working-guide__slide">
+                                <h5 class="heading-5 slide-content left" data-aos="fade-right" data-aos-delay="300">
+                                    Select
+                                    your farmshare and complete
+                                    reservation form.</h5>
+                                <p class="text-size-primary slide-content right" data-aos="fade-right"
+                                    data-aos-delay="600">
+                                    Et harum quidem rerum facilis est et
+                                    expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque
+                                    nihil impedit quo minus id quod maxime placeat facere
+                                </p>
+                            </li>
+                            <li class="working-guide__slide">
+                                <h5 class="heading-5 slide-content left">Lorem Ipsum is simply dummy text of the
+                                    printing.
+                                </h5>
+                                <p class="text-size-primary slide-content right">Lorem Ipsum has been the industry's
+                                    standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                                    type
+                                    and scrambled it to make a type specimen book.
+                                </p>
+                            </li>
+                            <li class="working-guide__slide">
+                                <h5 class="heading-5 slide-content left">Neque porro quisquam est qui dolorem ipsum quia
+                                    dolor.</h5>
+                                <p class="text-size-primary slide-content right">There are many variations of passages
+                                    of
+                                    Lorem Ipsum available, but the majority have suffered alteration in some form, by
+                                    injected humour, or randomised words.
+                                </p>
+                            </li>
+                            <li class="working-guide__slide">
+                                <h5 class="heading-5 slide-content left">There are many passages of Lorem Ipsum
+                                    available
+                                </h5>
+                                <p class="text-size-primary slide-content right">Contrary to popular belief, Lorem Ipsum
+                                    is
+                                    not simply random text. It has roots in a piece of classical Latin literature from
+                                    45
+                                    BC, making it over 2000 years old.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="investors-section pos-rel">
+                <div class="container">
+                    <div class="investors-heading mb-10" data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="heading-3 investors-heading__content">What investors like you are saying about Zou
+                        </h3>
+                    </div>
+                    <div class="swiper-container">
+                        <div class="investors-body-section mb-6 swiper-wrapper">
+                            <div class="investors-card swiper-slide" data-aos="zoom-in" data-aos-delay="300">
+                                <figure class="investors-profile investors-image__container">
+                                    <img src="./dist/images/profile.png" alt="profile" class="investors-profile__icon">
+                                </figure>
+                                <div class="investors-profile investors-profile__container">
+                                    <p class="text-size-secondary investors-profile__name">Fernando Soler</p>
+                                    <p class="text-size-secondary investors-profile__position">Telecommunication
+                                        Engineer
+                                    </p>
+                                </div>
+                                <div class="investors-review">
+                                    <p class="text-size-primary investors-review__content">Quis autem vel eum iure
+                                        reprehenderit qui in ea voluptate velit esse quam nihil molestiae.</p>
+                                </div>
+                            </div>
+                            <div class="investors-card swiper-slide" data-aos="zoom-in" data-aos-delay="600">
+                                <figure class="investors-profile investors-image__container">
+                                    <img src="./dist/images/profile.png" alt="profile" class="investors-profile__icon">
+                                </figure>
+                                <div class="investors-profile investors-profile__container">
+                                    <p class="text-size-secondary investors-profile__name">Ilone Pickford</p>
+                                    <p class="text-size-secondary investors-profile__position">Head of Agrogofund Groups
+                                    </p>
+                                </div>
+                                <div class="investors-review">
+                                    <p class="text-size-primary investors-review__content">" At vero eos et accusamus et
+                                        iusto
+                                        odio dignissimos ducimus qui blanditiis praesentium.</p>
+                                </div>
+                            </div>
+                            <div class="investors-card swiper-slide" data-aos="zoom-in" data-aos-delay="900">
+                                <figure class="investors-profile investors-image__container">
+                                    <img src="./dist/images/profile.png" alt="profile" class="investors-profile__icon">
+                                </figure>
+                                <div class="investors-profile investors-profile__container">
+                                    <p class="text-size-secondary investors-profile__name">Ed O’Brien</p>
+                                    <p class="text-size-secondary investors-profile__position">Herbalist</p>
+                                </div>
+                                <div class="investors-review">
+                                    <p class="text-size-primary investors-review__content">" Ui dolorem eum fugiat quo
+                                        voluptas
+                                        nulla pariatur? At vero eos et accusamus et iusto odio.</p>
+                                </div>
+                            </div>
+                            <div class="investors-card swiper-slide" data-aos="zoom-in" data-aos-delay="1200">
+                                <figure class="investors-profile investors-image__container">
+                                    <img src="./dist/images/profile.png" alt="profile" class="investors-profile__icon">
+                                </figure>
+                                <div class="investors-profile investors-profile__container">
+                                    <p class="text-size-secondary investors-profile__name">Fernando Soler</p>
+                                    <p class="text-size-secondary investors-profile__position">Telecommunication
+                                        Engineer
+                                    </p>
+                                </div>
+                                <div class="investors-review">
+                                    <p class="text-size-primary investors-review__content">" Quis autem vel eum iure
+                                        reprehenderit qui in ea voluptate velit esse quam nihil molestiae.</p>
+                                </div>
+                            </div>
+                            <div class="investors-card swiper-slide" data-aos="zoom-in" data-aos-delay="1500">
+                                <figure class="investors-profile investors-image__container">
+                                    <img src="./dist/images/profile.png" alt="profile" class="investors-profile__icon">
+                                </figure>
+                                <div class="investors-profile investors-profile__container">
+                                    <p class="text-size-secondary investors-profile__name">Ilone Pickford</p>
+                                    <p class="text-size-secondary investors-profile__position">Head of Agrogofund Groups
+                                    </p>
+                                </div>
+                                <div class="investors-review">
+                                    <p class="text-size-primary investors-review__content">" At vero eos et accusamus et
+                                        iusto
+                                        odio dignissimos ducimus qui blanditiis praesentium.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-controls">
+                            <button class="controls-btn prev swiper-button-prev active" id="prevBtn"><svg class="arrow">
+                                    <use href="./dist/images/sprite.svg#left-arrow" /></svg></button>
+                            <button class="controls-btn swiper-button-next" id="nextBtn"><svg class="arrow right-arrow">
+                                    <use href="./dist/images/sprite.svg#left-arrow" /></svg></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="working-platform ta-center" data-aos="fade-up">
+                <div class="container">
+                    <p class="working-platform__head mb-5">WORKS WITH ANY PLATFORM</p>
+                    <ul class="product-list">
+                        <li class="product-list__icon icon-amazon"><a href="javascript:void(0)" class="icon-links"><svg
+                                    class="icon">
+                                    <use href="./dist/images/sprite.svg#amazon" /></svg></a></li>
+                        <li class="product-list__icon icon-etsy"><a href="javascript:void(0)" class="icon-links"><svg
+                                    class="icon">
+                                    <use href="./dist/images/sprite.svg#etsy" /></svg></a></li>
+                        <li class="product-list__icon icon-clickbank"><a href="javascript:void(0)"
+                                class="icon-links"><svg class="icon">
+                                    <use href="./dist/images/sprite.svg#clickbank" /></svg></a></li>
+                        <li class="product-list__icon icon-m"><a href="javascript:void(0)" class="icon-links"><svg
+                                    class="icon">
+                                    <use href="./dist/images/sprite.svg#m-icon" /></svg></a></li>
+                        <li class="product-list__icon icon-youtube"><a href="javascript:void(0)" class="icon-links"><svg
+                                    class="icon">
+                                    <use href="./dist/images/sprite.svg#youtube" /></svg></a></li>
+                        <li class="product-list__icon icon-kickstarter"><a href="javascript:void(0)"
+                                class="icon-links"><svg class="icon">
+                                    <use href="./dist/images/sprite.svg#kickstarter" /></svg></a></li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer class="footer ta-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             <div class="container">
-                <p class="working-platform__head mb-5">WORKS WITH ANY PLATFORM</p>
-                <ul class="product-list">
-                    <li class="product-list__icon icon-amazon"><a href="javascript:void(0)" class="icon-links"><svg
-                                class="icon">
-                                <use href="./dist/images/sprite.svg#amazon" /></svg></a></li>
-                    <li class="product-list__icon icon-etsy"><a href="javascript:void(0)" class="icon-links"><svg
-                                class="icon">
-                                <use href="./dist/images/sprite.svg#etsy" /></svg></a></li>
-                    <li class="product-list__icon icon-clickbank"><a href="javascript:void(0)" class="icon-links"><svg
-                                class="icon">
-                                <use href="./dist/images/sprite.svg#clickbank" /></svg></a></li>
-                    <li class="product-list__icon icon-m"><a href="javascript:void(0)" class="icon-links"><svg
-                                class="icon">
-                                <use href="./dist/images/sprite.svg#m-icon" /></svg></a></li>
-                    <li class="product-list__icon icon-youtube"><a href="javascript:void(0)" class="icon-links"><svg
-                                class="icon">
-                                <use href="./dist/images/sprite.svg#youtube" /></svg></a></li>
-                    <li class="product-list__icon icon-kickstarter"><a href="javascript:void(0)" class="icon-links"><svg
-                                class="icon">
-                                <use href="./dist/images/sprite.svg#kickstarter" /></svg></a></li>
+                <p class="text-size-primary text-secondary mb-5">© 2018 autocryp All Right Reserved</p>
+                <ul class="text-size-primary text-secondary">
+                    <li class="footer-nav-links pos-rel link-hover"><a href="javascript:void(0)">Benefit</a></li>
+                    <li class="footer-nav-links">/</li>
+                    <li class="footer-nav-links pos-rel link-hover"><a href="javascript:void(0)">Pricing</a></li>
+                    <li class="footer-nav-links">/</li>
+                    <li class="footer-nav-links pos-rel link-hover"><a href="javascript:void(0)">Testimonials</a></li>
+                    <li class="footer-nav-links">/</li>
+                    <li class="footer-nav-links pos-rel link-hover"><a href="javascript:void(0)">Clients</a></li>
                 </ul>
             </div>
-        </section>
-    </main>
-    <footer class="footer ta-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-        <div class="container">
-            <p class="text-size-primary text-secondary mb-5">© 2018 autocryp All Right Reserved</p>
-            <ul class="text-size-primary text-secondary">
-                <li class="footer-nav-links pos-rel link-hover"><a href="javascript:void(0)">Benefit</a></li>
-                <li class="footer-nav-links">/</li>
-                <li class="footer-nav-links pos-rel link-hover"><a href="javascript:void(0)">Pricing</a></li>
-                <li class="footer-nav-links">/</li>
-                <li class="footer-nav-links pos-rel link-hover"><a href="javascript:void(0)">Testimonials</a></li>
-                <li class="footer-nav-links">/</li>
-                <li class="footer-nav-links pos-rel link-hover"><a href="javascript:void(0)">Clients</a></li>
-            </ul>
-        </div>
-    </footer>
+        </footer>
 
 
 
-    <!-- Sign-up Modal box  -->
+        <!-- Sign-up Modal box  -->
 
 
-    <div id="signUpModal" class="modal-bg">
-        <div class="modal-box">
-            <span class="close-btn" onclick="closeModal()">&times;</span>
-            <div class="modal-content mb-4">
-                <div class="ta-center mb-3">
-                    <h2 class="modal-content__heading">Get Started.</h2>
-                    <p class="modal-content__sub-heading">Register in 20 seconds.</p>
+        <div id="signUpModal" class="modal-bg">
+            <div class="modal-box" id="modal-box">
+                <span class="close-btn" onclick="closeModal()">&times;</span>
+                <div class="modal-content mb-4">
+                    <div class="ta-center mb-3" id="modal-header">
+                        <h2 class="modal-content__heading">Get Started.</h2>
+                        <p class="modal-content__sub-heading">Register in 20 seconds.</p>
+                    </div>
+                    <form name="signUpForm" onsubmit="return validateForm()" id="modal-body">
+                        <fieldset class="form-fieldset pos-rel">
+                            <input type="text" id="name" name="name" placeholder="Enter your name" class="form-input">
+                            <label for="name" class="form-label">Name</label>
+                            <span class="error-msg" id="name-error"></span>
+                        </fieldset>
+                        <fieldset class="form-fieldset pos-rel">
+                            <input type="text" id="email" name="email" placeholder="Enter your E-mail"
+                                class="form-input">
+                            <label for="email" class="form-label">E-mail</label>
+                            <span class="error-msg" id="email-error"></span>
+                        </fieldset>
+                        <fieldset class="form-fieldset pos-rel">
+                            <input type="password" id="password" name="password" placeholder="Enter your password"
+                                class="form-input password">
+                            <label for="password" class="form-label">Password</label>
+                            <button class="show-password" type="button" onclick="showPassword()">SHOW</button>
+                            <span class="error-msg" id="pass-error"></span>
+                        </fieldset>
+                        <button class="submit-btn" type="submit" value="submit">Register</button>
+                    </form>
                 </div>
-                <form name="signUpForm" onsubmit="return validateForm()">
-                    <fieldset class="form-fieldset pos-rel">
-                        <input type="text" id="name" name="name" placeholder="Enter your name" class="form-input">
-                        <label for="name" class="form-label">Name</label>
-                        <span class="error-msg" id="name-error"></span>
-                    </fieldset>
-                    <fieldset class="form-fieldset pos-rel">
-                        <input type="text" id="email" name="email" placeholder="Enter your E-mail" class="form-input">
-                        <label for="email" class="form-label">E-mail</label>
-                        <span class="error-msg" id="email-error"></span>
-                    </fieldset>
-                    <fieldset class="form-fieldset pos-rel">
-                        <input type="password" id="password" name="password" placeholder="Enter your password"
-                            class="form-input password">
-                        <label for="password" class="form-label">Password</label>
-                        <button class="show-password" type="button" onclick="showPassword()">SHOW</button>
-                        <span class="error-msg" id="pass-error"></span>
-                    </fieldset>
-                    <button class="submit-btn" type="submit" value="submit">Register</button>
-                </form>
-            </div>
-            <hr class="modal-divider-line mb-4">
-            <div class="ta-center">
-                <p class="modal-login">Already a member? <a href="javascript:void(0)" class="modal-login-link">Log In
-                        Here.</a></p>
+                <div class="ta-center" id="modal-footer">
+                    <hr class="modal-divider-line mb-4">
+                    <p class="modal-login">Already a member? <a href="javascript:void(0)" class="modal-login-link">Log
+                            In
+                            Here.</a></p>
+                </div>
             </div>
         </div>
-    </div>
     </div>
 
 
@@ -504,6 +536,7 @@
         });
         var swiper = new Swiper('.swiper-container', {
             slidesPerView: 'auto',
+            loop: true,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
