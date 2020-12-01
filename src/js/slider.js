@@ -40,9 +40,6 @@ function showSlide(n) {
     indicationNumber[slideIndex - 1].className += " active";
 }
 
-var prevBtn = document.getElementById("prevBtn");
-var nextBtn = document.getElementById("nextBtn");
-
 prevBtn.addEventListener("click", function () {
     prevBtn.classList.add("active");
     nextBtn.classList.remove("active");
